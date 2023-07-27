@@ -1,0 +1,123 @@
+
+
+:root {
+    --lighterColor: #BDCDD6;
+    --blue: #5C90CA;
+    --darkColor: #1A3D7B;
+    --darkerColor: #08162e;
+    --black: #050c18;
+    --displayFont: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(var(--blue), var(--darkColor), var(--darkerColor), var(--black));
+    color: var(--lighterColor);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./assets/iceberg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_tittle {
+    font-size: 4.5em;
+    color: var(--black);
+    font-family: var(--displayFont);
+    font-weight: 900;
+    text-align: center;
+}
+
+.banner_subtittle {
+    color: var(--darkerColor);
+    text-align: center;
+}
+
+.container_editoral {
+    display: flex;
+}
+
+.editorial {
+    flex-basis: 75%;
+}
+
+.editorial_card {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.editorial_info-texto {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 2.3em;
+}
+
+.editorial_card-img {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+}
+
+.sidebar {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.sidebar_lista {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.sidebar_item {
+    padding: 1em 8pt;
+    font-size: 1.5em;
+}
+
+.sidebar_item-link {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+    
+}
+
+.aside_container {
+    margin-bottom: 5em;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.aside_video {
+    padding: 2em;
+    margin: 1.5em 0 3em;
+    text-align: center;
+}
+
+.aside_video-tittle {
+    font-family: var(--displayFont);
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.aside_audio {
+    margin: auto;
+}
+
+.rodape {
+    background-color: var(--darkerColor);
+    padding: .5em;
+}
+
+.rodape-texto {
+    margin: 0;
+    color: var(--lighterColor);
+    text-align: center;
+    font-size: 1.1em;
+}
